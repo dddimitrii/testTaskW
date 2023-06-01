@@ -25,7 +25,7 @@ class AuthController {
       }
       const hashPassword = await bcrypt.hash(
         password,
-        Number(process.env.ROUNDS_HASH)
+        7
       );
       const user = new User({ username, email, password: hashPassword });
       await user.save();
