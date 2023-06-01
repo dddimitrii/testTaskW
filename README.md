@@ -1,5 +1,7 @@
-# testTaskW
-Запуск сервера
+# testTaskW 
+https://intense-scrubland-94182.herokuapp.com deploy link
+
+Запуск сервера локально
 ```shell
 npm i
 npm run build
