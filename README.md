@@ -1,18 +1,18 @@
 # testTaskW 
 https://intense-scrubland-94182.herokuapp.com deploy link
 
+Для запуска и работы сервера локально необходим .env файл в корне приложения со следующим содержанием
+```dotenv
+PORT=ваш порт
+MONGODB_URL=<uri для подлючеия к монге>
+JWT_SECRET=CHANGE_ME
+```
+
 Запуск сервера локально
 ```shell
 npm i
 npm run build
 npm run start
-```
-
-Для запуска и работы необходим .env файл в корне приложения со следующим содержанием
-```dotenv
-PORT=ваш порт
-MONGODB_URL=<uri для подлючеия к монге>
-JWT_SECRET=CHANGE_ME
 ```
 
 Регистрация рользователя /auth/registration (метод POST)
@@ -29,7 +29,7 @@ Response
 token: ""
 }
 ```
-Авторизация пользоваиеля /auth/login (метод POST)
+Авторизация пользователя /auth/login (метод POST)
 ```shell
 Request
 {
